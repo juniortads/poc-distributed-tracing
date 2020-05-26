@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{8ACA4F8F-B4EC-4880-9912-BBDE80BFB245}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Delivery.BackgroundTasks/appsettings.json">
+    <Files>
+      <File FileName="Delivery.BackgroundTasks/appsettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="poc-distributed-tracing" expanded="True">
+            <Node name="Background" expanded="True">
+              <Node name="Delivery.BackgroundTasks" expanded="True">
+                <Node name="appsettings.json" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Services" expanded="True">
+              <Node name="Order.API" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="ExternalServices" expanded="True" />
+                <Node name="Services" expanded="True" />
+              </Node>
+              <Node name="Payment.API" expanded="True">
+                <Node name="Controllers" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Services.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Background.Delivery.BackgroundTasks PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-Delivery.BackgroundTasks-82410A1F-BFB0-41D9-9DDC-6648888741B6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EventBus.Sqs.Tracing" Version="2.0.1" />
+    <PackageReference Include="Jaeger" Version="0.3.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.4" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Background\" />
+    <Folder Include="Tasks\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Events\" />
+  </ItemGroup>
+</Project>
