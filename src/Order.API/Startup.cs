@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using OpenTracing.Util;
 using Order.API.ExternalServices;
 using Order.API.Services;
+using Order.API.Useful;
 using Polly;
 using Polly.Contrib.Simmy;
 
@@ -45,10 +46,12 @@ namespace Order.API
                            r => r.StatusCode == HttpStatusCode.ServiceUnavailable)
                        .RetryAsync(3, onRetry: (message, retryCount) =>
                        {
-                           string msg = $"Let's call the service again: {retryCount}";
+                           string msg = $"Unexpected error, I will try to call the payment service again. Retry number: {retryCount}";
 
                            Console.BackgroundColor = ConsoleColor.Black;
                            Console.ForegroundColor = ConsoleColor.Red;
+
+                           //$" say {msg}".Bash();
 
                            Console.Out.WriteLineAsync(msg);
                        });
