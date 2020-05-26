@@ -15,22 +15,24 @@ It's necessary configure some properties in the `appsettings.json` file. An exam
 
 ### Usage
 
-#### 1.
+#### Step 1
 > docker run -d -p6831:6831/udp -p16686:16686 jaegertracing/all-in-one:latest
+
+It's necessary configure some properties in the `appsettings.json` file.
 
 ```json
 "ENDPOINT_PAYMENT_API": "http://localhost:61966/"
 ```
 
-#### 2.
+#### Step 2
 >  cd src/Order.API/
 >  dotnet run
 
-#### 3.
+#### Step 3
 >  cd src/Payment.API/
 >  dotnet run
 
-#### 4.
+#### Step 4
 >  cd src/Delivery.BackgroundTasks/
 >  dotnet run
 
