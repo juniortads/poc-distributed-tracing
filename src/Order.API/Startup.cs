@@ -1,4 +1,6 @@
 using System;
+using System.Net;
+using System.Net.Http;
 using EventBus.Sqs.Configuration;
 using EventBus.Sqs.Tracing.Configuration;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using OpenTracing.Util;
 using Order.API.ExternalServices;
 using Order.API.Services;
+using Polly;
+using Polly.Contrib.Simmy;
 
 namespace Order.API
 {
@@ -29,10 +33,34 @@ namespace Order.API
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IPaymentExternalService, PaymentExternalService>();
 
+            var faultMessage = new HttpResponseMessage(HttpStatusCode.ServiceUnavailable)
+            {
+                Content = new StringContent("Service temporarily unavailable")
+            };
+
+            var faultPolicy = MonkeyPolicy.InjectFaultAsync(faultMessage,injectionRate: 0.6,enabled: () => true);
+
+            var retryPolicy = Policy
+                       .HandleResult<HttpResponseMessage>(
+                           r => r.StatusCode == HttpStatusCode.ServiceUnavailable)
+                       .RetryAsync(3, onRetry: (message, retryCount) =>
+                       {
+                           string msg = $"Let's call the service again: {retryCount}";
+
+                           Console.BackgroundColor = ConsoleColor.Black;
+                           Console.ForegroundColor = ConsoleColor.Red;
+
+                           Console.Out.WriteLineAsync(msg);
+                       });
+
+            var policyWrap = Policy.WrapAsync(retryPolicy, faultPolicy);
+
             services.AddHttpClient("PaymentServiceClient", client =>
             {
                 client.BaseAddress = new Uri(Configuration["ENDPOINT_PAYMENT_API"]);
-            });
+            })
+            .AddPolicyHandler(policyWrap);
+
 
             Environment.SetEnvironmentVariable("JAEGER_SERVICE_NAME", Configuration["JAEGER_SERVICE_NAME"]);
             Environment.SetEnvironmentVariable("JAEGER_AGENT_HOST", Configuration["JAEGER_AGENT_HOST"]);

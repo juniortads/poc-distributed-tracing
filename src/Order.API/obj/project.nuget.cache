@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z9VvuSvw2CLzIJrQaHLA3mh3NJeXtVNHXk0Mep0dtweG/fNBzYpLcIvtIgYhHeO/IIt6fiQLkRPePEyw+3j7ZQ==",
+  "dgSpecHash": "Iao5so2VGF3zKSPgkG7IksSyb9Z6HYqEEXJqbQaIlGgN+bWGXgDye8WTkC35BTOeemynoqWg/h+rbii/r0t08w==",
   "success": true,
   "projectFilePath": "/Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/Order.API.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,8 @@
     "/Users/jojossa/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.abstractions/3.1.0/microsoft.extensions.diagnostics.healthchecks.abstractions.3.1.0.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.0/microsoft.extensions.fileproviders.abstractions.3.1.0.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/microsoft.extensions.hosting.abstractions/3.1.0/microsoft.extensions.hosting.abstractions.3.1.0.nupkg.sha512",
+    "/Users/jojossa/.nuget/packages/microsoft.extensions.http/3.0.0/microsoft.extensions.http.3.0.0.nupkg.sha512",
+    "/Users/jojossa/.nuget/packages/microsoft.extensions.http.polly/3.0.0/microsoft.extensions.http.polly.3.0.0.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/microsoft.extensions.logging/3.1.3/microsoft.extensions.logging.3.1.3.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.3/microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/microsoft.extensions.logging.configuration/3.1.3/microsoft.extensions.logging.configuration.3.1.3.nupkg.sha512",
@@ -35,6 +37,9 @@
     "/Users/jojossa/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/opentracing/0.12.1/opentracing.0.12.1.nupkg.sha512",
     "/Users/jojossa/.nuget/packages/opentracing.contrib.netcore/0.6.2/opentracing.contrib.netcore.0.6.2.nupkg.sha512",
+    "/Users/jojossa/.nuget/packages/polly/7.1.0/polly.7.1.0.nupkg.sha512",
+    "/Users/jojossa/.nuget/packages/polly.contrib.simmy/0.2.0/polly.contrib.simmy.0.2.0.nupkg.sha512",
+    "/Users/jojossa/.nuget/packages/polly.extensions.http/3.0.0/polly.extensions.http.3.0.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/runtime.native.system.data.sqlclient.sni/4.5.0/runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

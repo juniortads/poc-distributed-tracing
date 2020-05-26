@@ -47,9 +47,17 @@
               "target": "Package",
               "version": "[0.3.7, )"
             },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "OpenTracing.Contrib.NetCore": {
               "target": "Package",
               "version": "[0.6.2, )"
+            },
+            "Polly.Contrib.Simmy": {
+              "target": "Package",
+              "version": "[0.2.0, )"
             }
           },
           "imports": [

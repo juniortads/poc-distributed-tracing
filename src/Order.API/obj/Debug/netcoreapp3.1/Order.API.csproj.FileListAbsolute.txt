@@ -49,3 +49,7 @@
 /Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/obj/Debug/netcoreapp3.1/Order.API.csprojAssemblyReference.cache
 /Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/obj/Debug/netcoreapp3.1/Order.API.MvcApplicationPartsAssemblyInfo.cs
 /Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/obj/Debug/netcoreapp3.1/Order.API.csproj.CopyComplete
+/Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Http.Polly.dll
+/Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/bin/Debug/netcoreapp3.1/Polly.dll
+/Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/bin/Debug/netcoreapp3.1/Polly.Contrib.Simmy.dll
+/Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Order.API/bin/Debug/netcoreapp3.1/Polly.Extensions.Http.dll
