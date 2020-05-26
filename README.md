@@ -10,7 +10,7 @@ It's necessary configure some properties in the `appsettings.json` file. An exam
 "JAEGER_SERVICE_NAME": "order-api",
 "JAEGER_AGENT_HOST": "localhost",
 "JAEGER_AGENT_PORT": "6831",
-"JAEGER_SAMPLER_TYPE": "const",
+"JAEGER_SAMPLER_TYPE": "const"
 ```
 
 It's necessary configure in `Order.API` properties in the `appsettings.json` file.
