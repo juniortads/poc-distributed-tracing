@@ -13,32 +13,36 @@ It's necessary configure some properties in the `appsettings.json` file. An exam
 "JAEGER_SAMPLER_TYPE": "const",
 ```
 
-### Usage
-
-#### Step 1
-> docker run -d -p6831:6831/udp -p16686:16686 jaegertracing/all-in-one:latest
-
-It's necessary configure some properties in the `appsettings.json` file.
+It's necessary configure in `Order.API` properties in the `appsettings.json` file.
 
 ```json
 "ENDPOINT_PAYMENT_API": "http://localhost:61966/"
 ```
 
-#### Step 2
->  cd src/Order.API/
->  dotnet run
+### Usage
 
-#### Step 3
->  cd src/Payment.API/
->  dotnet run
+```bash
+docker run -d -p6831:6831/udp -p16686:16686 jaegertracing/all-in-one:latest
+```
 
-#### Step 4
->  cd src/Delivery.BackgroundTasks/
->  dotnet run
+```bash
+cd src/Order.API/
+dotnet run
+```
+
+```bash
+cd src/Payment.API/
+dotnet run
+```
+
+```bash
+cd src/Delivery.BackgroundTasks/
+dotnet run
+```
 
 ### Self-Test
 
-```
+```bash
 curl --location --request POST 'http://localhost:5000/order' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -47,7 +51,6 @@ curl --location --request POST 'http://localhost:5000/order' \
 	"Amount": 100
 }'
 ```
-### Examples
 
 <img src="/img/jaeger.png">
 <br>
