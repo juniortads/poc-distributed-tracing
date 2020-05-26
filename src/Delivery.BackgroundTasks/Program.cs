@@ -30,7 +30,7 @@ namespace Delivery.BackgroundTasks
 
                     services.AddSingleton(serviceProvider =>
                     {
-                        var loggerFactory = new LoggerFactory();
+                        var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
 
                         var config = Jaeger.Configuration.FromEnv(loggerFactory);
                         var tracer = config.GetTracer();
@@ -41,7 +41,16 @@ namespace Delivery.BackgroundTasks
                         return tracer;
                     });
 
-                    services.AddOpenTracing();
+                    services.AddOpenTracing(builder => {
+                        builder.ConfigureAspNetCore(options => {
+                            options.Hosting.IgnorePatterns.Add(x => {
+                                return x.Request.Path == "/health";
+                            });
+                            options.Hosting.IgnorePatterns.Add(x => {
+                                return x.Request.Path == "/metrics";
+                            });
+                        });
+                    });
 
                     services.AddEventBusSQS(configuration)
                             .AddOpenTracing();

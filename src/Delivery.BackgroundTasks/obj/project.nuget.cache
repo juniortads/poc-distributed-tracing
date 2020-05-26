@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1i3yAxxmLsZnTtACaWcLM8Ny5EN1hQvAd/+KNnjz54ubBqVigoYzio6BOcz8AXQzNpgeMkPWxedO++sCCGxIxg==",
+  "dgSpecHash": "BdZiLsed7nIYxXcDPh7IRw83Vn8WW2Bozq8V1wubHv2Y39WDmlBxuzobWnbYDJU7MjG9WgK5Eua9UtPhjv+0+A==",
   "success": true,
   "projectFilePath": "/Users/jojossa/Documents/code_github/poc-distributed-tracing/src/Delivery.BackgroundTasks/Delivery.BackgroundTasks.csproj",
   "expectedPackageFiles": [

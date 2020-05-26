@@ -5,4 +5,11 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.2" />
+    <PackageReference Include="Jaeger" Version="0.3.7" />
+  </ItemGroup>
 </Project>

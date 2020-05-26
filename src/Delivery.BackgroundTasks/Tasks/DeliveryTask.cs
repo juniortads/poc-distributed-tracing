@@ -32,7 +32,7 @@ namespace Delivery.BackgroundTasks.Tasks
                 await eventBus.Dequeue(deliveryInEvent);
             }
 
-            await Task.Delay(8000);
+            await Task.Delay(1000);
         }
     }
 }
