@@ -25,6 +25,12 @@ It's necessary configure in `Order.API` properties in the `appsettings.json` fil
 docker run -d -p6831:6831/udp -p16686:16686 jaegertracing/all-in-one:latest
 ```
 
+- https://docs.aws.amazon.com/cli/latest/reference/sqs/create-queue.html
+
+```bash
+aws sqs create-queue --queue-name DeliveryIn
+```
+
 ```bash
 cd src/Order.API/
 dotnet run
