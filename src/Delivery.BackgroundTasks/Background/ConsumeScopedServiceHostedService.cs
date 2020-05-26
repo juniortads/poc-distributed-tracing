@@ -34,7 +34,7 @@ namespace Delivery.BackgroundTasks.Background
             }
             catch (Exception ex)
             {
-                logger.LogError($"There was an error while the task. The message was: {ex.GetBaseException().Message}", ex.GetBaseException());
+                logger.LogError($"There was an error while the task. The message was:{ex.GetBaseException().Message}", ex.GetBaseException());
                 Environment.Exit(-1);
             }
         }

@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{8ACA4F8F-B4EC-4880-9912-BBDE80BFB245}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Delivery.BackgroundTasks/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Delivery.BackgroundTasks/Background/ConsumeScopedServiceHostedService.cs">
     <Files>
       <File FileName="Delivery.BackgroundTasks/appsettings.json" Line="1" Column="1" />
+      <File FileName="Delivery.BackgroundTasks/Program.cs" Line="1" Column="1" />
+      <File FileName="Delivery.BackgroundTasks/Events/DeliveryInEvent.cs" Line="1" Column="1" />
+      <File FileName="Delivery.BackgroundTasks/Configuration/ServiceCollectionExtensions.cs" Line="1" Column="1" />
+      <File FileName="Delivery.BackgroundTasks/Background/ConsumeScopedServiceHostedService.cs" Line="37" Column="86" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +13,11 @@
           <Node name="poc-distributed-tracing" expanded="True">
             <Node name="Background" expanded="True">
               <Node name="Delivery.BackgroundTasks" expanded="True">
-                <Node name="appsettings.json" selected="True" />
+                <Node name="Background" expanded="True">
+                  <Node name="ConsumeScopedServiceHostedService.cs" selected="True" />
+                </Node>
+                <Node name="Configuration" expanded="True" />
+                <Node name="Events" expanded="True" />
               </Node>
             </Node>
             <Node name="Services" expanded="True">
